@@ -1,0 +1,54 @@
+.TaskItem
+{
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 15px 25px;
+    color: #4d4c4c;
+    background-color: #f0efef;
+    border-bottom: 1px solid white;
+
+    &__content
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        &__checkbox
+        {
+            accent-color: #8a4baf;
+        }
+
+        button
+        {
+            cursor: pointer;
+            background-color: transparent;
+            outline: none;
+            border: none;
+        }
+
+        span
+        {
+            flex: 1;
+
+            &.completed
+            {
+                font-style: italic;
+                color: #595959;
+                opacity: 0.4;
+                text-decoration: line-through;
+            }            
+        }
+    }
+
+    &__editsection
+    {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.8rem;
+        border: 1px solid #dfdfdf;
+        outline: none;
+    }
+
+
+}

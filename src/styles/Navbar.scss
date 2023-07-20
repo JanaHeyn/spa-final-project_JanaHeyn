@@ -1,0 +1,114 @@
+.Navbar
+{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    // position: relative;
+    // top: 0;
+    // border: 2px solid red;
+
+    button 
+    {
+        cursor: pointer;
+        color: #4d4c4c;
+        background: transparent;;
+        border: none;
+    }
+
+    &__right__logout 
+    {
+        // width: 300px;
+        color: #8a4baf;
+        // position: absolute;
+        // top: -80px;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        // border: 2px solid red;
+        
+
+        p,
+        button
+            {
+                font-size: 1.125rem;
+                // border: 2px solid red;
+            }
+    }
+    
+    &__left
+    {
+        // border: 2px solid red;
+        align-self: center;
+
+        &__menu-toggle
+        {
+            // position: fixed;
+            // left: 30px;
+            // top: 40px;
+        }
+
+        &__menu-nav
+        {
+            max-width: 290px;
+            font-size: 1rem;
+            list-style: none;
+            background-color: white;
+            position: absolute;
+            top: 130px;
+            left: 0;
+            width: 0;
+            overflow: hidden;
+            z-index: 9;
+    
+            box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+            transform: translateX(-100px);
+            transition: transform ease-in-out 0.2s;
+
+            // border: 2px solid red;
+    
+            li a,
+            li span
+            {
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                color: #4d4c4c;
+            }
+
+            li span
+            {
+                color: #8a4baf;
+                font-style: italic;
+            }
+    
+            &.show-menu
+            {
+                width: 100%;
+                transform: translateX(0px);
+            }
+
+            .active 
+            {
+                color: #8a4baf;
+                border-left: 5px solid #8a4baf;
+                background-color: #e6e6e6;
+            }
+
+            &__log-in
+            {
+                font-size: 0.75rem;
+                border-top: 1px solid #efecec;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    
+}
