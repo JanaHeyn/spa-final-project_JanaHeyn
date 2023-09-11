@@ -1,6 +1,6 @@
 # spa-final-project_JanaHeyn
 
-School project from the "Single Page Application" module.
+To Do App - School project from the "Single Page Application" module.
 
 Used technologies: 
 - SASS
