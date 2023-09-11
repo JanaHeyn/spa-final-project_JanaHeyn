@@ -9,3 +9,17 @@ Used technologies:
 - useState, useRef, useEffect, useContext, useLocation
 
 ## Installation
+
+OS X & Linux
+
+```sh
+npm install
+```
+Installation of all dependecies:
+react, react-dom, react-icons, react-router-dom, sass
+
+## Starting the app
+
+```sh
+npm run dev
+```
